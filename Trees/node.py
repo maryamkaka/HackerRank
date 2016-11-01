@@ -49,8 +49,20 @@ class Node(object):
         if(not(self.right is None)):
             self.right.__inorder();
 
+    def __preorder():
+        print(self.data)
 
-tree = Node(3)
-tree.insert(5)
-tree.insert(2)
-tree.printTree()
+        if(not(self.left is None)):
+            self.left.__inorder();
+
+        if(not(self.right is None)):
+            self.right.__inorder();
+
+    def __preorder():
+        if(not(self.left is None)):
+            self.left.__inorder();
+
+        if(not(self.right is None)):
+            self.right.__inorder();
+
+        print(self.data)
