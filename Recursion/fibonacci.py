@@ -1,7 +1,7 @@
+fib_memo = {0:0, 0:0}   #fib memoization
+
 def fib(n):
-    if(n == 0):
-        return 0
-    elif(n ==1):
-        return 1
-    else:
-        return fib(n-1) + fib(n-2)
+    if(not(n in fib_memo)):
+        fib_memo[n] = fib(n-1) + fib(n-2)
+
+    return fib_memo[n]
