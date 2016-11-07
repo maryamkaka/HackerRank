@@ -8,7 +8,7 @@ def is_matched(expression):
         if(expression[i] == '[' or expression[i] == '{' or expression[i] == '('):
             opening.append(expression[i])
         else:
-            if((len(expression) == 0) or ((expression[i] == '}' and opening[-1] != '{') or (expression[i] == ']' and opening[-1] != '[') or (expression[i] == ')' and opening[-1] != '('))):
+            if((len(opening) == 0) or ((expression[i] == '}' and opening[-1] != '{') or (expression[i] == ']' and opening[-1] != '[') or (expression[i] == ')' and opening[-1] != '('))):
                 return False
             else:
                 opening = opening[0:-1]
