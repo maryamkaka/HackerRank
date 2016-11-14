@@ -1,2 +1,2 @@
-# ProjectEuler
-My solutions to ProjectEuler questions posted on HackerRank
+# HackerRank
+My solutions to questions posted on HackerRank
